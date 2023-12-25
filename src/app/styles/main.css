@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #febf8d;
+  --secondary-color: #7bd2fd;
+  --darkgrey: #1b2426;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 24px;
+  color: var(--darkgrey);
+  font-weight: 600;
+}
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+body {
+  background: url("https://images4.alphacoders.com/109/1092359.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #7bd2fd;
+  background-color: var(--darkgrey);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "one two";
+  grid-template-columns: 50% 50%;
+  padding: 4rem;
+  color: var(--secondary-color);
+  min-height: 50vh;
+  position: relative;
+  gap: 4rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: center;
+  padding: 5rem;
+  gap: 3rem;
+  background-color: var(--darkgrey);
+  border-radius: 10px;
+}
+
+.home-card {
+  position: absolute;
+  transition: all 1s;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 500px;
+  height: 40rem;
+}
+
+.slider-wrapper {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 4rem;
+}
